@@ -1,11 +1,11 @@
 from setuptools import setup
-from kanobu import __version__
+from kanobu_server import __version__
 
 with open("README.md", encoding="utf-8") as readme:
     long_description = readme.read()
 
 setup(
-    name="kanobu-server",
+    name="kanobu_server",
     version=__version__,
     author="Daniel Zakharov",
     author_email="daniel734@bk.ru",
@@ -16,7 +16,7 @@ setup(
     url="https://github.com/jDan735/kanobu-server",
     license="MIT",
     include_package_data=True,
-    packages=["kanobu-server"],
+    packages=["kanobu_server"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.4",
@@ -29,8 +29,8 @@ setup(
     python_requires=">=3",
     entry_points={
         "console_scripts": [
-            "kanobu-server=kanobu-server.server:server",
-            "kanobu-client=kanobu-server.clien:client"
+            "kanobu-server=kanobu_server.server:server",
+            "kanobu-client=kanobu_server.client:client"
         ]
     }
 )
