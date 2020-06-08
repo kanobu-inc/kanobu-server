@@ -27,10 +27,6 @@ setup(
         "License :: OSI Approved :: MIT License",
     ],
     python_requires=">=3",
-    install_requires=[
-        "colorama",
-        "pyyaml"
-    ],
     entry_points={
         "console_scripts": [
             "kanobu-server=kanobu-server.server:server",
